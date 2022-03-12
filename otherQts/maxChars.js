@@ -1,4 +1,4 @@
-const str = "aaaabbbccdddddwwww";
+const str = "aaaabbbccdddddwwwwwwwww";
 
 function maxChars(str) {
   const strArr = str.split("");
@@ -15,7 +15,16 @@ function maxChars(str) {
 
   // Find largest out of them
 
-  return strObj;
+  let largestNo = 0;
+  let largestStr = "";
+  for (let key in strObj) {
+    if (largestNo < strObj[key]) {
+      largestNo = strObj[key];
+      largestStr = key;
+    }
+  }
+
+  return largestStr;
 }
 
 console.log(maxChars(str));
