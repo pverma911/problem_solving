@@ -18,6 +18,7 @@ function maxChars(str) {
   let largestNo = 0;
   let largestStr = "";
   for (let key in strObj) {
+    console.log(key + ": " + strObj[key]);
     if (largestNo < strObj[key]) {
       largestNo = strObj[key];
       largestStr = key;
