@@ -1,7 +1,7 @@
 // Do a bubble sort on an array of numbers
 
 // More notes in copy
-let arr = [5, 2, 4, 1, 3];
+let arr = [15, 22, 14, 11, 3];
 
 function bubbleSort(array) {
   let swapped;

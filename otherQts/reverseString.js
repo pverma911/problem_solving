@@ -7,3 +7,9 @@ const data = str.split("").reduce((a, strs) => {
 }, "");
 
 console.log(data);
+
+// for (let i = 0; i < str.length; i++) {
+//   revS = str[i] + revS;
+// }
+
+// console.log(revS);
