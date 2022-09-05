@@ -16,6 +16,8 @@ function missingNum(start, end, arr) {
   return missing;
 }
 
+console.log(missingNum(start, end, arr));
+
 // with cycleSort
 
 function missingNumCyclic(arr) {
@@ -43,4 +45,4 @@ function missingNumCyclic(arr) {
   return arr.length;
 }
 
-console.log(missingNumCyclic(arr));
+// console.log(missingNumCyclic(arr));

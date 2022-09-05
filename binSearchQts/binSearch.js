@@ -20,5 +20,31 @@ function binSearch(arr, x) {
   return -1;
 }
 
-let res = binSearch(arr, x);
+// let res2 = binSearch(arr, x);
+// console.log("Result ==>", res2);
+
+// Binary Search using Recursion:
+
+function recursiveSearch(arr, x, left, right) {
+  if (left > right) {
+    return -1;
+  }
+
+  let mid = Math.floor((left + right) / 2);
+
+  if (arr[mid] === x) {
+    return mid;
+  } else if (x < arr[mid]) {
+    return recursiveSearch(arr, x, left, right - 1);
+  } else if (x > arr[mid]) {
+    return recursiveSearch(arr, x, left + 1, right);
+  }
+}
+
+// Binary search on strings
+
+let strArr = ["aaron", "ab", "bo", "clo", "dan", "ed", "fai", "gigi", "jo"];
+let str = "ed";
+
+let res = recursiveSearch(strArr, str, 0, arr.length - 1);
 console.log("Result ==>", res);

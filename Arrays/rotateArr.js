@@ -2,6 +2,8 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let rotation = 2; // means [8,9,1,2....]
 
+// Basically what we are doing is: reversing whole array, then reversing begining of array till rotation, then reverting back the remaining(reversing end)
+
 function rotateArr(arr, rotation) {
   rotation = rotation % arr.length; // we do this as say if length is 9 and rotation is 10, so basically rotation is 1 and so on....
   if (rotation < 0) {
